@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
+import NavBar from "~/components/NavBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,11 +18,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
   pageProps: { session, ...pageProps },
 }) => {
   return (
-    <SessionProvider session={session}>
+    // <SessionProvider session={session}>
       <main className={`font-sans ${inter.variable}`}>
-        <Component {...pageProps} />
+        <NavBar />
+        <Component {...pageProps}/>
       </main>
-    </SessionProvider>
+    // </SessionProvider>
   );
 };
 
