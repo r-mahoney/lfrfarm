@@ -33,8 +33,7 @@ export default function Events() {
         <meta property="og:title" content="Events"></meta>
         <meta name="twitter:title" content="Events"></meta>
         <meta property="og:type" content="website" />
-        {/*VVVVVVVVVVVVVVVVVVVVVVVVVV THIS NEED TO BE FILLEd OUT ONCE WE HAVE OUR DOMAIN FIGURED OUT VVVVVVVVVVVVVVVVVVVVv */}
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://www.lfrfarm.com/Events" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
       <EventsPage animal={events} pic1={cows} pic2={geese} pic3={buns} />

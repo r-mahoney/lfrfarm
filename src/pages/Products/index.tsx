@@ -6,6 +6,8 @@ import { farmProducts } from "~/utils/farmProducts";
 import Image from "next/image";
 import beefcuts from "~/images/products/beefcuts.jpg";
 import porkcuts from "~/images/products/porkcuts.jpg";
+import sourdough from "~/images/products/sourdough.png";
+import eggsImage from "~/images/products/eggs.jpg";
 
 export default function Products() {
   const beef = farmProducts.Beef;
@@ -17,7 +19,7 @@ export default function Products() {
   const router = useRouter();
   return (
     <div className="flex justify-center">
-      <div className="mr-2 md:w-1/2 lg:mt-12">
+      <div className="w-full md:w-1/2 lg:mt-12">
         <div className="dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 flex flex-col rounded-xl border-2 bg-gray-200 shadow-sm">
           <div className="sm:hidden">
             <label htmlFor="hs-card-nav-tabs" className="sr-only">
@@ -31,7 +33,7 @@ export default function Products() {
                 router.push(`/Products?name=${e.currentTarget.value}`);
               }}
             >
-              <option selected={name === "beef" ? true : false} value="beef">
+              <option selected={name === "beef" || name === null ? true : false} value="beef">
                 Beef
               </option>
               <option selected={name === "pork" ? true : false} value="pork">
@@ -50,11 +52,11 @@ export default function Products() {
           </div>
           <div className="hidden sm:block">
             <nav
-              className="dark:border-neutral-700 dark:divide-neutral-700 relative z-0 flex divide-x rounded-xl border-b"
+              className="dark:border-neutral-700 dark:divide-neutral-700 flex divide-x rounded-xl border-b"
               aria-label="Tabs"
             >
               <Link
-                className={`dark:bg-neutral-800 dark:text-neutral-300 text-md group relative min-w-0 flex-1 overflow-hidden rounded-ss-xl bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "beef" || name === null ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
+                className={`dark:bg-neutral-800 dark:text-neutral-300 text-md group min-w-0 flex-1 overflow-hidden rounded-ss-xl bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "beef" || name === null ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
                 href={{
                   pathname: "/Products",
                   query: { name: "beef" },
@@ -65,7 +67,7 @@ export default function Products() {
               </Link>
 
               <Link
-                className={`dark:bg-neutral-800 text-md group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "pork" ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
+                className={`dark:bg-neutral-800 text-md group min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "pork" ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
                 href={{
                   pathname: "/Products",
                   query: { name: "pork" },
@@ -76,7 +78,7 @@ export default function Products() {
               </Link>
 
               <Link
-                className={`dark:bg-neutral-800 text-md group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "eggs" ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
+                className={`dark:bg-neutral-800 text-md group min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "eggs" ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
                 href={{
                   pathname: "/Products",
                   query: { name: "eggs" },
@@ -87,7 +89,7 @@ export default function Products() {
               </Link>
 
               <Link
-                className={`dark:bg-neutral-800 text-md group relative min-w-0 flex-1 overflow-hidden rounded-se-xl bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "baked-goods" ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
+                className={`dark:bg-neutral-800 text-md group min-w-0 flex-1 overflow-hidden rounded-se-xl bg-white px-4 py-4 text-center font-medium hover:bg-gray-50 focus:z-10 ${name === "baked-goods" ? "border-b-2 border-b-blue-600 text-gray-900 dark:border-blue-500" : "dark:hover:bg-neutral-700 dark:hover:text-neutral-400 border-b-2 border-b-gray-500 text-gray-600 hover:text-gray-800"}`}
                 href={{
                   pathname: "/Products",
                   query: { name: "baked-goods" },
@@ -99,28 +101,46 @@ export default function Products() {
             </nav>
           </div>
           {(name === "beef" || name === null) &&
-            beef.map((product) => <ProductCard product={product} />)}
+            beef.map((product) => <ProductCard product={product} key={product.name}/>)}
           {name === "pork" &&
-            pork.map((product) => <ProductCard product={product} />)}
+            pork.map((product) => <ProductCard product={product}  key={product.name}/>)}
           {name === "eggs" &&
-            eggs.map((product) => <ProductCard product={product} />)}
+            eggs.map((product) => <ProductCard product={product}  key={product.name}/>)}
           {name === "baked-goods" &&
-            bakedGoods.map((product) => <ProductCard product={product} />)}
+            bakedGoods.map((product) => <ProductCard product={product}  key={product.name}/>)}
         </div>
       </div>
       {(name === "beef" || name === null) && (
         <Image
           src={beefcuts}
           alt="picture depicts different cuts of beef from a single cow"
-          className="hidden sm:flex sm:ml-6 sm:h-fit sm:w-auto lg:mt-12"
+          className="hidden sm:ml-6 sm:flex sm:h-fit sm:w-auto lg:mt-12"
         />
       )}
       {name === "pork" && (
         <Image
           src={porkcuts}
-          alt="picture depicts different cuts of beef from a single cow"
-          className="hidden sm:flex sm:ml-6 sm:w-[612px] sm:h-[416px] lg:mt-12"
+          alt="picture depicts different cuts of beef from a single pig"
+          className="hidden sm:ml-6 sm:flex sm:h-[416px] sm:w-[612px] lg:mt-12"
         />
+      )}
+      {name === "eggs" && (
+        <div className="sm:ml-6 md:w-[612px] lg:mt-12">
+          <Image
+            src={eggsImage}
+            alt="picture depicts different cuts of beef from a single cow"
+            className="hidden sm:ml-6 sm:flex sm:h-[416px] sm:w-[612px] lg:mt-12"
+          />
+        </div>
+      )}
+      {name === "baked-goods" && (
+        <div className="sm:ml-6 md:w-[612px] lg:mt-12">
+          <Image
+            src={sourdough}
+            alt="depiction of several loaves of sour dough bread"
+            className="hidden sm:flex sm:h-auto sm:max-w-[450px]"
+          />
+        </div>
       )}
     </div>
   );

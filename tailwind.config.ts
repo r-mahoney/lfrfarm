@@ -20,7 +20,8 @@ export default withMT({
         }],
         paragraph: '16pt',
         mobileHeader: '24pt',
-        mobileParagraph: '12pt'
+        mobileParagraph: '12pt',
+        mobileFooter: '16pt'
       }
     },
   },

@@ -4,14 +4,14 @@ import rabbit1 from "~/images/rabbits/carosel1.jpg";
 import rabbit2 from "~/images/rabbits/carosel2.jpg";
 import rabbit3 from "~/images/rabbits/carosel3.jpg";
 import solo from "~/images/rabbits/rabbitsolo.jpg";
-import logo from "~/images/home/logo.jpg"
+import logo from "~/images/home/logo.jpg";
 import Head from "next/head";
 
 export default function Rabbits() {
-    const rabbits = farminfo.rabbits
-    return (
-        <>
-        <Head>
+  const rabbits = farminfo.rabbits;
+  return (
+    <>
+      <Head>
         <title>Rabbits - Let Freedom Ring Farm</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -35,11 +35,17 @@ export default function Rabbits() {
         <meta property="og:title" content="Rabbits"></meta>
         <meta name="twitter:title" content="Rabbits"></meta>
         <meta property="og:type" content="website" />
-        {/*VVVVVVVVVVVVVVVVVVVVVVVVVV THIS NEED TO BE FILLEd OUT ONCE WE HAVE OUR DOMAIN FIGURED OUT VVVVVVVVVVVVVVVVVVVVv */}
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://www.lfrfarm.com/Rabbits" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
-        <AnimalPage animal={rabbits} pic1={rabbit1} pic2={rabbit2} pic3={rabbit3} header={logo} solo={solo} />
-        </>
-    )
+      <AnimalPage
+        animal={rabbits}
+        pic1={rabbit1}
+        pic2={rabbit2}
+        pic3={rabbit3}
+        header={logo}
+        solo={solo}
+      />
+    </>
+  );
 }

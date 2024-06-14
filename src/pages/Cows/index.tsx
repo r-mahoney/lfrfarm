@@ -35,8 +35,7 @@ export default function Cows() {
         <meta property="og:title" content="Cows"></meta>
         <meta name="twitter:title" content="Cows"></meta>
         <meta property="og:type" content="website" />
-        {/*VVVVVVVVVVVVVVVVVVVVVVVVVV THIS NEED TO BE FILLEd OUT ONCE WE HAVE OUR DOMAIN FIGURED OUT VVVVVVVVVVVVVVVVVVVVv */}
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://www.lfrfarm.com/Cows" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
       <AnimalPage

@@ -1,3 +1,8 @@
+import eggs1 from "~/images/eggs/carosel1.jpg";
+import eggs2 from "~/images/eggs/carosel2.jpg";
+import eggs3 from "~/images/eggs/carosel3.jpg";
+import solo from "~/images/eggs/eggsolo.jpg";
+import logo from "~/images/home/logo.jpg";
 import Head from "next/head";
 import AnimalPage from "~/components/AnimalPage";
 import { farminfo } from "~/utils/farminfo";
@@ -30,11 +35,10 @@ export default function Eggs() {
         <meta property="og:title" content="Eggs"></meta>
         <meta name="twitter:title" content="Eggs"></meta>
         <meta property="og:type" content="website" />
-        {/*VVVVVVVVVVVVVVVVVVVVVVVVVV THIS NEED TO BE FILLEd OUT ONCE WE HAVE OUR DOMAIN FIGURED OUT VVVVVVVVVVVVVVVVVVVVv */}
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://www.lfrfarm.com/Eggs" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
-      <AnimalPage animal={eggs} />
+      <AnimalPage animal={eggs} pic1={eggs1} pic2={eggs2} pic3={eggs3} solo={solo} header={logo}/>
     </>
   );
 }

@@ -35,8 +35,7 @@ export default function Pigs() {
         <meta property="og:title" content="Pigs"></meta>
         <meta name="twitter:title" content="Pigs"></meta>
         <meta property="og:type" content="website" />
-        {/*VVVVVVVVVVVVVVVVVVVVVVVVVV THIS NEED TO BE FILLEd OUT ONCE WE HAVE OUR DOMAIN FIGURED OUT VVVVVVVVVVVVVVVVVVVVv */}
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://www.lfrfarm.com/Pigs" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
       <AnimalPage

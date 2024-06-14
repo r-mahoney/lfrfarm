@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lfrfarm.com
+
+# Sitemaps
+Sitemap: https://www.lfrfarm.com/sitemap.xml

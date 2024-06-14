@@ -7,17 +7,17 @@ export default function AnimalsDropdown({ links }: any) {
   const strippedPath = path.split("/")[1];
 
   return (
-    <div className="hidden md:flex flex-row">
+    <div className="hidden sm:flex flex-row">
       <div
         className={`flex items-center justify-center ${animalLinks.includes(strippedPath!) ? "underline" : ""}`}
       >
         <div
-          className={`group menu-hover font-nav text-xl lg:text-2xl text-white`}
+          className={`group menu-hover font-nav sm:text-sm md:text-md lg:text-lg xl:text-2xl text-white`}
           onClick={() => {}}
         >
           Animals
           <div
-            className="invisible absolute top-[120px] z-50 flex flex-col bg-gray-100 px-4 py-1 text-gray-800 shadow-xl group-hover:visible"
+            className="invisible absolute sm:top-[60px] md:top-[70px] lg:top-[80px] xl:top-[100px] z-900 flex flex-col bg-gray-100 px-4 py-1 text-gray-800 shadow-xl group-hover:visible"
             onClick={(e) => {
               const dropdown = e.currentTarget;
               dropdown.setAttribute("style", "display: none");

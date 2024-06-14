@@ -7,6 +7,7 @@ import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
 import NavBar from "~/components/NavBar";
+import Footer from "~/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <main className={`font-sans ${inter.variable}`}>
         <NavBar />
         <Component {...pageProps}/>
+        <Footer />
       </main>
     // </SessionProvider>
   );

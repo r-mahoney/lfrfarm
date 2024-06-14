@@ -74,17 +74,17 @@ export default function ImageCarousel({
       <Image
         src={src1}
         alt="image 1"
-        className="object-fit m-auto aspect-square h-auto rounded-[10px]"
+        className="object-fit m-auto aspect-square h-auto w-full rounded-[10px]"
       />
       <Image
         src={src2}
         alt="image 2"
-        className="object-fit m-auto aspect-square h-auto rounded-[10px]"
+        className="object-fit m-auto aspect-square h-auto w-full rounded-[10px]"
       />
       <Image
         src={src3}
         alt="image 3"
-        className="object-fit m-auto aspect-square h-auto rounded-[10px]"
+        className="object-fit m-auto aspect-square h-auto w-full rounded-[10px]"
       />
     </Carousel>
   );
