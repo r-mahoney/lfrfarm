@@ -11,7 +11,7 @@ export default function ImageCarousel({
   src3: StaticImageData;
 }) {
   return (
-    //@ts-expect-error
+    //@ts-expect-error it wants 252 more properties, not doing that
     <Carousel
       loop={true}
       autoplay={true}

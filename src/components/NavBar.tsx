@@ -86,7 +86,7 @@ export default function NavBar() {
           key={index}
             href={`${link}`}
             className={`${isAnimalsExpanded ? "block" : "hidden"} my-2 ml-8 size-[10pt]`}
-            onClick={(e) => {
+            onClick={() => {
               setIsOpen(false);
               if(isOpen) {
                 setIsAnimalsExpanded(false)
@@ -101,7 +101,7 @@ export default function NavBar() {
           key={index}
             href={`${link}`}
             className={`${isAnimalsExpanded ? "hidden" : "block"} my-2 ml-2 size-[10pt]`}
-            onClick={(e) => {
+            onClick={() => {
               setIsOpen(false);
               if(isOpen) {
                 setIsAnimalsExpanded(false)
@@ -145,7 +145,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className="flex flex-[3] items-center justify-center sm:justify-start">
-          {links["Other"].map(
+          {links.Other.map(
             ({ link, title }, index) =>
               index >= 2 && (
                 <div
