@@ -100,7 +100,7 @@ export default function Contacts() {
             </svg>
             <p className="text-center font-bold">Contact Us!</p>
             <p>Telephone:</p>
-            <p className="font-semibold">(540) 760-9103</p>
+            <p className="font-semibold">(540) 477-3060</p>
             <p>E-mail:</p>
             <p className="font-semibold">lfrf@1791.com</p>
           </div>

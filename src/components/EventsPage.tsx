@@ -36,7 +36,7 @@ export default function EventsPage({
           className="aspect-square h-[200px] flex-1 rounded-xl md:mr-10 md:h-[325px] lg:h-[647.5px]"
         />
       </div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col-reverse sm:flex-col md:flex-row">
         <Image
           src={pic2}
           alt="pic"
