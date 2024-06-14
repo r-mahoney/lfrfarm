@@ -1,6 +1,35 @@
+import Head from "next/head";
+
 export default function Contacts() {
   return (
     <>
+      <Head>
+        <title>Contacts - Let Freedom Ring Farm</title>
+        <link rel="icon" href="/farmfavicon.ico" />
+        <meta
+          name="description"
+          content="The most up to date contact information for Let Freedom Ring Farm"
+        />
+        <meta
+          name="keywords"
+          content="Let Freedom Ring Farm, Contacts information, Mount Jackson, Telephone number, email address, address, physical location"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="utf-8" />
+        <meta
+          property="og:description"
+          content="The most up to date contact information for Let Freedom Ring Farm"
+        />
+        <meta property="og:site_name" content="Let Freedom Ring Farm" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:title" content="Contacts"></meta>
+        <meta name="twitter:title" content="Contacts"></meta>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.lfrfarm.com/Contacts" />
+        <meta name="twitter:type" content="website"></meta>
+      </Head>
       <div className="flex flex-col justify-around md:flex-row lg:mx-32 lg:mt-12">
         <div className="flex-1"></div>
         <div className=" w-full flex-1">
@@ -83,7 +112,7 @@ export default function Contacts() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.64271376064!2d-78.68526482418565!3d38.81773915140068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b500f39ebdfbc5%3A0x2754382b0514d903!2s570%20Dodson%20Rd%2C%20Mt%20Jackson%2C%20VA%2022842!5e0!3m2!1sen!2sus!4v1718241449248!5m2!1sen!2sus"
           width="600"
           height="450"
-          style={{border:"0"}}
+          style={{ border: "0" }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

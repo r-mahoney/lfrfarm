@@ -5,23 +5,23 @@ import home1 from "~/images/home/carosel1.jpg";
 import home2 from "~/images/home/carosel2.jpg";
 import home3 from "~/images/home/carosel3.jpg";
 import solo from "~/images/home/homesolo.jpg";
-import logo from "~/images/home/logo.jpg"
+import logo from "~/images/home/logo.jpg";
 
 export default function Home() {
-  const home = farminfo.home
+  const home = farminfo.home;
 
   return (
     <>
       <Head>
         <title>Home - Let Freedom Ring Farm</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/farmfavicon.ico" />
         <meta
           name="description"
           content="Learn all about Let Freedom Ring Farm"
         />
         <meta
           name="keywords"
-          content="Let Freedom Ring Farm, Home, Silver fox Home, Bio-diverse, polyface farming, regenerative farming, farm tours"
+          content="Let Freedom Ring Farm, Home, Silver fox Home, Bio-diverse, polyface farming, regenerative farming, farm tours, Shenendoah Valley Farm, Mount Jackson farm, Shen valley farm, Farm sales, Shenendoah Farm products"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -39,7 +39,14 @@ export default function Home() {
         <meta property="og:url" content="https://www.lfrfarm.com" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
-      <AnimalPage animal={home} pic1={home1} pic2={home2} pic3={home3} header={logo} solo={solo} />
+      <AnimalPage
+        animal={home}
+        pic1={home1}
+        pic2={home2}
+        pic3={home3}
+        header={logo}
+        solo={solo}
+      />
     </>
   );
 }

@@ -13,7 +13,7 @@ export default function Pigs() {
     <>
       <Head>
         <title>Pigs - Let Freedom Ring Farm</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/farmfavicon.ico" />
         <meta
           name="description"
           content="Learn all about the Pigs at Let Freedom Ring Farm"

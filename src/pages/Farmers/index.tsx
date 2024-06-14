@@ -13,7 +13,7 @@ export default function Farmers() {
     <>
       <Head>
         <title>Farmers - Let Freedom Ring Farm</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/farmfavicon.ico" />
         <meta
           name="description"
           content="Learn a little more about Brian and Liz, the owners/operators of Let Freedom Ring Farm."

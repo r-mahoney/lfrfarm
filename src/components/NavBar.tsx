@@ -81,8 +81,9 @@ export default function NavBar() {
             )}
           </span>
         </div>
-        {links.Animals.map(({ link, title }) => (
+        {links.Animals.map(({ link, title }, index) => (
           <Link
+          key={index}
             href={`${link}`}
             className={`${isAnimalsExpanded ? "block" : "hidden"} my-2 ml-8 size-[10pt]`}
             onClick={(e) => {
@@ -95,8 +96,9 @@ export default function NavBar() {
             {title}
           </Link>
         ))}
-        {links.Other.map(({ link, title }) => (
+        {links.Other.map(({ link, title }, index) => (
           <Link
+          key={index}
             href={`${link}`}
             className={`${isAnimalsExpanded ? "hidden" : "block"} my-2 ml-2 size-[10pt]`}
             onClick={(e) => {

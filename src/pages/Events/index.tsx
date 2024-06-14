@@ -11,7 +11,7 @@ export default function Events() {
     <>
       <Head>
         <title>Events - Let Freedom Ring Farm</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/farmfavicon.ico" />
         <meta
           name="description"
           content="Take a look at the current events happening at the farm. See where we'll be for purchases and fun times."

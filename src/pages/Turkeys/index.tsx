@@ -14,7 +14,7 @@ export default function Turkeys() {
     <>
       <Head>
         <title>Turkeys - Let Freedom Ring Farm</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/farmfavicon.ico" />
         <meta
           name="description"
           content="Learn all about the Turkeys at Let Freedom Ring Farm"

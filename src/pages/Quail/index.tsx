@@ -13,7 +13,7 @@ export default function Quail() {
     <>
       <Head>
         <title>Quail - Let Freedom Ring Farm</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/farmfavicon.ico" />
         <meta
           name="description"
           content="Learn all about the Quail at Let Freedom Ring Farm"
