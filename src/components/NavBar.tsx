@@ -117,8 +117,8 @@ export default function NavBar() {
         style={{ backdropFilter: "blur(2px)" }}
       >
         <div className="flex flex-[3] justify-end">
-          <AnimalsDropdown links={links["Animals"]} />
-          {links["Other"].map(
+          <AnimalsDropdown links={links.Animals} />
+          {links.Other.map(
             ({ link, title }, index) =>
               index < 2 && (
                 <div

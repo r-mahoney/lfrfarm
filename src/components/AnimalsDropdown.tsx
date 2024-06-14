@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function AnimalsDropdown({ links }: any) {
+export default function AnimalsDropdown({ links }: {links: {link: string; title: string}[]}) {
   const animalLinks: string[] = links.map(({ link }: { link: string }) => link);
   const path = usePathname();
   const strippedPath = path.split("/")[1];
@@ -13,7 +13,6 @@ export default function AnimalsDropdown({ links }: any) {
       >
         <div
           className={`group menu-hover font-nav sm:text-sm md:text-md lg:text-lg xl:text-2xl text-white`}
-          onClick={() => {}}
         >
           Animals
           <div

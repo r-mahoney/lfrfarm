@@ -11,15 +11,14 @@ export default function ImageCarousel({
   src3: StaticImageData;
 }) {
   return (
-    //@ts-ignore
+    //@ts-expect-error
     <Carousel
       loop={true}
       autoplay={true}
       autoplayDelay={3000}
       transition={{ type: "tween", duration: 1 }}
       className="m-auto content-center items-center lg:w-1/2"
-      prevArrow={()=>{}}
-      nextArrow={()=>{}}
+      
       // prevArrow={({ handlePrev }) => (
       //   //@ts-ignore
       //   <IconButton
