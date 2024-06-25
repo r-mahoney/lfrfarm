@@ -7,7 +7,7 @@ export const farmProducts = {
         },
         {
             name : "Chuck Roast",
-            price: "$25.00",
+            price: "$25.00/lb",
             description: ""
         },
         {
@@ -42,8 +42,8 @@ export const farmProducts = {
         },
         {
             name : "Ground Beef",
-            price: "$18.00",
-            description: ""
+            price: "$18.00/pack",
+            description: "1 pack comes with 2 pounds of meat"
         },
         {
             name : "London Broil",
@@ -57,7 +57,7 @@ export const farmProducts = {
         },
         {
             name : "Ossobuco",
-            price: "$8.00",
+            price: "$8.00/pack",
             description: ""
         },
         {
@@ -87,7 +87,7 @@ export const farmProducts = {
         },
         {
             name : "Stew Beef",
-            price: "$11.00",
+            price: "$11.00/pack",
             description: ""
         },
         {
@@ -97,7 +97,7 @@ export const farmProducts = {
         },
         {
             name : "Tri-Tip Steak",
-            price: "$28.00",
+            price: "$28.00/lb",
             description: ""
         },
     ],
@@ -144,7 +144,7 @@ export const farmProducts = {
         },
         {
             name : "Pork Fat",
-            price: "$8.00",
+            price: "$8.00/pack",
             description: ""
         },
         {

@@ -18,6 +18,11 @@ export default withMT({
           letterSpacing: '0px',
           fontWeight: '400',
         }],
+        footer: ['34pt', {
+          lineHeight: "90%",
+          letterSpacing: '0px',
+          fontWeight: '400',
+        }],
         paragraph: '16pt',
         mobileHeader: '24pt',
         mobileParagraph: '12pt',

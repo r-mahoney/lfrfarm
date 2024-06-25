@@ -55,7 +55,7 @@ export default function Contacts() {
               <path d="M10 18h4" />
             </svg>
             <p className="font-bold">Company Information:</p>
-            <p>Let Freedom Ring Farm</p>
+            <p className="text-center">Let Freedom Ring Farm</p>
           </div>
         </div>
         <div className=" w-full flex-1">
@@ -76,8 +76,8 @@ export default function Contacts() {
               <circle cx="12" cy="10" r="3" />
             </svg>
             <p className="font-bold">Location:</p>
-            <p>570 Dodson Road</p>
-            <p>Mount Jackson, VA 22842</p>
+            <p className="text-center">570 Dodson Road</p>
+            <p className="text-center">Mount Jackson, VA 22842</p>
           </div>
         </div>
         <div className=" w-full flex-1">

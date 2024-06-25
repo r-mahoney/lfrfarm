@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="pb-8 w-full">
+    <div className="pb-8 w-full mt-auto">
       <div className="mx-12 flex lg:mx-36">
         <div className="flex-[2]">
           <p className="text-wrap font-heading text-mobileFooter md:text-heading">

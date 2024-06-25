@@ -8,6 +8,7 @@ import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import NavBar from "~/components/NavBar";
 import Footer from "~/components/Footer";
+import Subscription from "~/components/Subscription";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,11 +21,16 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     // <SessionProvider session={session}>
-      <main className={`font-sans ${inter.variable}`}>
-        <NavBar />
-        <Component {...pageProps}/>
-        <Footer />
-      </main>
+    <main className={`font-sans ${inter.variable}`}>
+      <NavBar />
+      <div className="flex min-h-screen flex-col justify-between">
+        <Component {...pageProps} />
+        <>
+          {/* <Subscription /> */}
+          <Footer />
+        </>
+      </div>
+    </main>
     // </SessionProvider>
   );
 };

@@ -1,22 +1,28 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function AnimalsDropdown({ links }: {links: {link: string; title: string}[]}) {
+export default function AnimalsDropdown({
+  links,
+}: {
+  links: { link: string; title: string }[];
+}) {
   const animalLinks: string[] = links.map(({ link }: { link: string }) => link);
   const path = usePathname();
   const strippedPath = path.split("/")[1];
 
   return (
-    <div className="hidden sm:flex flex-row">
+    <div className="hidden flex-row sm:flex">
       <div
-        className={`flex items-center justify-center ${animalLinks.includes(strippedPath!) ? "underline" : ""}`}
+        className={`mr-2 flex items-center justify-center ${animalLinks.includes(strippedPath!) ? "underline" : ""}`}
       >
-        <div
-          className={`group menu-hover font-nav sm:text-sm md:text-md lg:text-lg xl:text-2xl text-white`}
-        >
-          Animals
+        <div className="menu-hover group flex flex-col">
           <div
-            className="invisible absolute sm:top-[60px] md:top-[70px] lg:top-[80px] xl:top-[100px] z-900 flex flex-col bg-gray-100 px-4 py-1 text-gray-800 shadow-xl group-hover:visible"
+            className={`md:text-md font-nav text-white sm:text-sm lg:text-lg xl:text-2xl`}
+          >
+            Animals
+          </div>
+          <div
+            className="z-900 invisible absolute flex flex-col bg-gray-100 px-2 md:px-4 py-1 text-gray-800 shadow-xl group-hover:visible"
             onClick={(e) => {
               const dropdown = e.currentTarget;
               dropdown.setAttribute("style", "display: none");
@@ -28,7 +34,7 @@ export default function AnimalsDropdown({ links }: {links: {link: string; title:
             {links.map(({ link, title }: { link: string; title: string }) => (
               <Link
                 href={`/${link}`}
-                className={`font-nav text-xl ${path === `/${link}` ? "underline" : ""}`}
+                className={`font-nav text-sm xl:text-xl md:text-md  hover:underline ${path === `/${link}` ? "underline" : ""}`}
                 key={link}
               >
                 {title}

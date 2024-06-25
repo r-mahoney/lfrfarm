@@ -122,7 +122,7 @@ export default function NavBar() {
             ({ link, title }, index) =>
               index < 2 && (
                 <div
-                  className={`ml-2 hidden items-center justify-center text-white sm:flex ${path === `/${link}` ? "underline" : null}`}
+                  className={`mx-2 hidden items-center justify-center text-white sm:flex ${path === `/${link}` ? "underline" : null}`}
                   key={link}
                 >
                   <Link
@@ -149,7 +149,7 @@ export default function NavBar() {
             ({ link, title }, index) =>
               index >= 2 && (
                 <div
-                  className={`ml-2 hidden items-center justify-center text-white sm:flex ${path === `/${link}` ? "underline" : null}`}
+                  className={`mx-2 hidden items-center justify-center text-white sm:flex ${path === `/${link}` ? "underline" : null}`}
                   key={link}
                 >
                   <Link

@@ -47,7 +47,7 @@ export default function Products() {
         <meta property="og:url" content="https://www.lfrfarm.com/Products" />
         <meta name="twitter:type" content="website"></meta>
       </Head>
-      <div className="flex justify-center">
+      <div className="flex justify-center p-2">
         <div className="w-full md:w-1/2 lg:mt-12">
           <div className="dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 flex flex-col rounded-xl border-2 bg-gray-200 shadow-sm">
             <div className="sm:hidden">
@@ -154,31 +154,31 @@ export default function Products() {
           <Image
             src={beefcuts}
             alt="picture depicts different cuts of beef from a single cow"
-            className="hidden sm:ml-6 sm:flex sm:h-fit sm:w-auto lg:mt-12"
+            className="hidden sm:ml-6 md:flex sm:h-fit sm:w-auto lg:mt-12 flex-1 overflow-auto"
           />
         )}
         {name === "pork" && (
           <Image
             src={porkcuts}
             alt="picture depicts different cuts of beef from a single pig"
-            className="hidden sm:ml-6 sm:flex sm:h-[416px] sm:w-[612px] lg:mt-12"
+            className="hidden sm:ml-2 md:flex sm:h-[416px] sm:w-auto lg:mt-12 flex-1 overflow-auto"
           />
         )}
         {name === "eggs" && (
-          <div className="sm:ml-6 md:w-[612px] lg:mt-12">
+          <div className="sm:ml-2 md:w-[612px] lg:mt-12 flex-1 overflow-auto">
             <Image
               src={eggsImage}
               alt="picture depicts different cuts of beef from a single cow"
-              className="hidden sm:ml-6 sm:flex sm:h-[416px] sm:w-[612px] lg:mt-12"
+              className="hidden sm:ml-2 md:flex sm:h-[416px] sm:w-auto lg:mt-12 flex-1 overflow-auto"
             />
           </div>
         )}
         {name === "baked-goods" && (
-          <div className="sm:ml-6 md:w-[612px] lg:mt-12">
+          <div className="sm:ml-2 md:w-[612px] lg:mt-12 flex-1 overflow-auto">
             <Image
               src={sourdough}
               alt="depiction of several loaves of sour dough bread"
-              className="hidden sm:flex sm:h-auto sm:max-w-[450px]"
+              className="hidden sm:flex sm:h-auto sm:max-w-auto"
             />
           </div>
         )}
