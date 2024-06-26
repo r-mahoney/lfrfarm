@@ -54,7 +54,7 @@ export default function Contacts() {
               <path d="M10 14h4" />
               <path d="M10 18h4" />
             </svg>
-            <p className="font-bold">Company Information:</p>
+            <p className="font-bold text-center">Company Information:</p>
             <p className="text-center">Let Freedom Ring Farm</p>
           </div>
         </div>

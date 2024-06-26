@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="pb-8 w-full mt-auto">
       <div className="mx-12 flex lg:mx-36">
         <div className="flex-[2]">
-          <p className="text-wrap font-heading text-mobileFooter md:text-heading">
+          <p className="text-wrap font-heading text-mobileFooter md:text-footer">
             Know where your food comes from & how it was treated.
           </p>
           <p className="font-paragraph text-mobileParagraph md:text-paragraph">
