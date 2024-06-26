@@ -1,5 +1,6 @@
-import Image, { StaticImageData } from "next/image";
-import { Carousel, IconButton } from "@material-tailwind/react";
+import Image from "next/image";
+import type { StaticImageData } from "next/image";
+import { Carousel } from "@material-tailwind/react";
 
 export default function ImageCarousel({
   src1,

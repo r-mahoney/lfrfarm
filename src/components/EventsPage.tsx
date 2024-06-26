@@ -1,5 +1,6 @@
-import Image, { StaticImageData } from "next/image";
-import { Animal } from "~/utils/Types";
+import Image from "next/image";
+import type { StaticImageData } from "next/image";
+import type { Animal } from "~/utils/Types";
 
 export default function EventsPage({
   animal,

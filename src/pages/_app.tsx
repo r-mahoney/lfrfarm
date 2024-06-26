@@ -1,5 +1,5 @@
 import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
 
@@ -9,7 +9,7 @@ import "~/styles/globals.css";
 import NavBar from "~/components/NavBar";
 import Footer from "~/components/Footer";
 import Subscription from "~/components/Subscription";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,11 +20,6 @@ const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
-  const [navBarHeight, setNavBarHeight] = useState(0)
-  useEffect(() => {
-    setNavBarHeight(document.getElementById("navBar")!.offsetHeight)
-  }, [])
-  console.log(navBarHeight)
   return (
     // <SessionProvider session={session}>
     <main className={`font-sans ${inter.variable}`}>

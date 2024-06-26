@@ -1,5 +1,7 @@
 import axios from "axios";
-import { FormEvent, SyntheticEvent, useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
+
 
 export default function Subscription() {
   const [email, setEmail] = useState<string>("");
