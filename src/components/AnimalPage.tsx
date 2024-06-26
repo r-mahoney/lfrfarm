@@ -1,5 +1,6 @@
-import { Animal } from "../utils/Types";
-import Image, { StaticImageData } from "next/image";
+import type { Animal } from "../utils/Types";
+import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import ImageCarousel from "./ImageCarousel";
 
 export default function AnimalPage({
@@ -18,7 +19,6 @@ export default function AnimalPage({
   solo: StaticImageData;
 }) {
   const { h1, p1, h2, p2, h3, p3 } = animal;
-
   return (
     <div className="mx-12 lg:mx-36">
       <div className="text-mobileHeader md:text-heading font-heading text-center lg:mt-20">{h1}</div>

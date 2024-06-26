@@ -1,5 +1,5 @@
 import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
 
@@ -9,6 +9,7 @@ import "~/styles/globals.css";
 import NavBar from "~/components/NavBar";
 import Footer from "~/components/Footer";
 import Subscription from "~/components/Subscription";
+import { useState } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <div className="flex min-h-screen flex-col justify-between">
         <Component {...pageProps} />
         <>
-          {/* <Subscription /> */}
+          <Subscription />
           <Footer />
         </>
       </div>

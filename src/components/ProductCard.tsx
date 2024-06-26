@@ -1,4 +1,4 @@
-import { Product } from "~/utils/Types";
+import type { Product } from "~/utils/Types";
 
 export default function ProductCard ({product}: {product: Product}) {
     const {name, price, description} = product

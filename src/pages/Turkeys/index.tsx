@@ -5,7 +5,6 @@ import turkey2 from "~/images/turkey/carosel2.jpg";
 import turkey3 from "~/images/turkey/carosel3.jpg";
 import solo from "~/images/turkey/turkeysolo.jpg";
 import logo from "~/images/home/logo.jpg";
-import { log } from "console";
 import Head from "next/head";
 
 export default function Turkeys() {

@@ -29,7 +29,8 @@ export default function NavBar() {
   const [isAnimalsExpanded, setIsAnimalsExpanded] = useState(false);
   return (
     <div
-      className="flex w-full"
+      className={`flex w-full`}
+      id="navBar"
       style={{
         backgroundImage: `url("/cov2.jpg")`,
         backgroundRepeat: "no-repeat",
