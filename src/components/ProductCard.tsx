@@ -1,9 +1,11 @@
+import { useState } from "react";
 import type { Product } from "~/utils/Types";
 
 export default function ProductCard ({product}: {product: Product}) {
     const {name, price, description} = product
+    const [expandedOnMobile, setExpandedOnMobile] = useState<boolean>(false)
     return (
-        <div className="p-4 text-left md:px-5 md:py-7 border-b">
+        <div className="pb-2 text-left md:px-5 border-b">
             <div className=" flex justify-between">
               <h3 className="text-lg my-auto font-bold text-black dark:text-white">
                 {name}
@@ -12,7 +14,10 @@ export default function ProductCard ({product}: {product: Product}) {
                 {price}
               </p>
             </div>
-            <p className="dark:text-neutral-400 mt-2 text-gray-500">
+            <p className="hidden sm:block dark:text-neutral-400 mt-2 text-blue-gray-900">
+              {description}
+            </p>
+            <p className={`${expandedOnMobile ? "" : "overflow-hidden text-ellipsis whitespace-nowrap"} sm:hidden dark:text-neutral-400 mt-2 text-blue-gray-900 pl-4`} onClick={() => setExpandedOnMobile(currentState => !currentState)}>
               {description}
             </p>
           </div>

@@ -27,6 +27,8 @@ const config = {
     //   }
     // ],
     "@typescript-eslint/require-await": "off",
+    //need to comment out the next 4 lines to run linter correctly before pushing
+    //next 4 lines are in to prevent vercel from stopping deployment due to axios typed errors
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-explicit-any": "off",

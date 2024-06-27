@@ -57,29 +57,15 @@ export default function Products() {
               <select
                 name="hs-card-nav-tabs"
                 id="hs-card-nav-tabs"
-                className="dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 block h-8 w-full border-x-0 border-t-0 border-gray-500 pl-4 focus:border-blue-600 focus:ring-blue-600"
+                className="dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 block h-8 rounded-xl text-xl w-full border-x-0 border-t-0 border-gray-500 pl-4 focus:border-blue-600 focus:ring-blue-600"
                 onChange={(e) => {
                   router.push(`/Products?name=${e.currentTarget.value}`);
                 }}
               >
-                <option
-                  selected={name === "beef" || name === null ? true : false}
-                  value="beef"
-                >
-                  Beef
-                </option>
-                <option selected={name === "pork" ? true : false} value="pork">
-                  Pork
-                </option>
-                <option selected={name === "eggs" ? true : false} value="eggs">
-                  Eggs
-                </option>
-                <option
-                  selected={name === "baked-goods" ? true : false}
-                  value="baked-goods"
-                >
-                  Baked Goods
-                </option>
+                <option value="beef">Beef</option>
+                <option value="pork">Pork</option>
+                <option value="eggs">Eggs</option>
+                <option value="baked-goods">Baked Goods</option>
               </select>
             </div>
             <div className="hidden sm:block">
@@ -154,31 +140,31 @@ export default function Products() {
           <Image
             src={beefcuts}
             alt="picture depicts different cuts of beef from a single cow"
-            className="hidden sm:ml-6 md:flex sm:h-fit sm:w-auto lg:mt-12 flex-1 overflow-auto"
+            className="hidden flex-1 overflow-auto sm:ml-6 sm:h-fit sm:w-auto md:flex lg:mt-12"
           />
         )}
         {name === "pork" && (
           <Image
             src={porkcuts}
             alt="picture depicts different cuts of beef from a single pig"
-            className="hidden sm:ml-2 md:flex sm:h-[416px] sm:w-auto lg:mt-12 flex-1 overflow-auto"
+            className="hidden flex-1 overflow-auto sm:ml-2 sm:h-[416px] sm:w-auto md:flex lg:mt-12"
           />
         )}
         {name === "eggs" && (
-          <div className="sm:ml-2 md:w-[612px] lg:mt-12 flex-1 overflow-auto">
+          <div className="flex-1 overflow-auto sm:ml-2 md:w-[612px] lg:mt-12">
             <Image
               src={eggsImage}
               alt="picture depicts different cuts of beef from a single cow"
-              className="hidden sm:ml-2 md:flex sm:h-[416px] sm:w-auto lg:mt-12 flex-1 overflow-auto"
+              className="hidden flex-1 overflow-auto sm:ml-2 sm:h-[416px] sm:w-auto md:flex lg:mt-12"
             />
           </div>
         )}
         {name === "baked-goods" && (
-          <div className="sm:ml-2 md:w-[612px] lg:mt-12 flex-1 overflow-auto">
+          <div className="flex-1 overflow-auto sm:ml-2 md:w-[612px] lg:mt-12">
             <Image
               src={sourdough}
               alt="depiction of several loaves of sour dough bread"
-              className="hidden sm:flex sm:h-auto sm:max-w-auto"
+              className="sm:max-w-auto hidden sm:flex sm:h-auto"
             />
           </div>
         )}

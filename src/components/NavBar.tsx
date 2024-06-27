@@ -44,7 +44,7 @@ export default function NavBar() {
         style={{ transition: "width .5s, display .5s" }}
       >
         <div
-          onClick={() => setIsAnimalsExpanded(!isAnimalsExpanded)}
+          onClick={() => setIsAnimalsExpanded(currentValue => !currentValue)}
           className="ml-2 mt-2 flex cursor-pointer"
         >
           Animals
@@ -165,7 +165,7 @@ export default function NavBar() {
           <div
             className="cursor-pointer sm:hidden"
             onClick={() => {
-              setIsOpen(!isOpen);
+              setIsOpen(currentValue => !currentValue);
               if(isOpen) {
                 setIsAnimalsExpanded(false)
               }
