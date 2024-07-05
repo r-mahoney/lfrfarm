@@ -26,10 +26,10 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <NavBar />
       <div className="flex min-h-screen flex-col justify-between">
         <Component {...pageProps} />
-        <>
+        <div className="flex flex-col justify-end">
           <Subscription />
           <Footer />
-        </>
+        </div>
       </div>
     </main>
     // </SessionProvider>
