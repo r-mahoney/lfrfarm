@@ -1,6 +1,11 @@
 export const farmProducts = {
   Beef: [
     {
+    name: "Arm Roast",
+    price: "$25.00/pack",
+    description: "A primal cut of beef that comes from a cow's shoulder and is known for its tender, juicy texture and rich flavor. It can also be called chuck arm roast, arm pot roast, clod roast, or chuck primal"
+    },
+    {
       name: "Brisket",
       price: "$18.00/lb",
       description:
